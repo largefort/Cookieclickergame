@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookie Clicker Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="cookie-container">
+    <div id="click-text">+1</div>
+    <img id="cookie" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAAr0lEQVR42mJkwAMYgk9SPR1glIoagpPEaIh9DpUdQwWICiRfIUelJRlAfFIE8IlBEyiIyE6FAEzQFEdDC5BMkQkCVkQjJKAJEVQhSiRfXKBEykhSR6ElKQFM0FHz4zgQQXQADPwhA+lyFvLIAAAAAElFTkSuQmCC" alt="Cookie" onclick="clickCookie()">
+    <span id="click-count">0</span>
+  </div>
+
+  <div id="upgrades-container">
+    <h2>Upgrades</h2>
+    <div class="upgrade-item">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAAr0lEQVR42mJkwAMYgk9SPR1glIoagpPEaIh9DpUdQwWICiRfIUelJRlAfFIE8IlBEyiIyE6FAEzQFEdDC5BMkQkCVkQjJKAJEVQhSiRfXKBEykhSR6ElKQFM0FHz4zgQQXQADPwhA+lyFvLIAAAAAElFTkSuQmCC" alt="Cursor">
+      <span>Upgrade 1: Cursor (+1 per click)</span>
+      <button onclick="buyUpgrade(1)">Buy (Cost: 10)</button>
+    </div>
+    <div class="upgrade-item">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAAr0lEQVR42mJkwAMYgk9SPR1glIoagpPEaIh9DpUdQwWICiRfIUelJRlAfFIE8IlBEyiIyE6FAEzQFEdDC5BMkQkCVkQjJKAJEVQhSiRfXKBEykhSR6ElKQFM0FHz4zgQQXQADPwhA+lyFvLIAAAAAElFTkSuQmCC" alt="Grandma">
+      <span>Upgrade 2: Grandma (+0 per click)</span>
+      <button onclick="buyUpgrade(2)">Buy (Cost: 50)</button>
+    </div>
+    <!-- Add more upgrades with base64 images here -->
+  </div>
+
+  <div id="cps-container">
+    <span>Cookies Per Second:</span>
+    <span id="cps-count">0</span>
+  </div>
+
+  <div id="prestige-container">
+    <button onclick="resetGame()">Reset Game (Earn Prestige)</button>
+    <span>Prestige Points:</span>
+    <span id="prestige-points">0</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
